@@ -114,12 +114,12 @@
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl my-4">Projects I developed</h2>
                 <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
 
-                    <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
-                        alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-                        class="rounded-lg bg-gray-100">
-                    <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-                        alt="Top down view of walnut card tray with embedded magnets and card groove."
-                        class="rounded-lg bg-gray-100">
+                    <a href="https://github.com/claraquintela/stampee" target="blank"><img
+                            src="{{ Vite::asset('resources/img/Stampee.png') }}" alt="Stampee: auction house online"
+                            class="rounded-lg bg-gray-100"></a>
+                    <a href=""><img src="{{ Vite::asset('resources/img/creuset.png') }}"
+                            alt="Top down view of walnut card tray with embedded magnets and card groove."
+                            class="rounded-lg bg-gray-100"></a>
                     <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
                         alt="Side of walnut card tray with card groove and recessed card area."
                         class="rounded-lg bg-gray-100">

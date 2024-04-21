@@ -1,8 +1,8 @@
-  <nav class="flex items-center justify-between p-6 lg:px-8 my-8 mb-10" aria-label="Global">
+  <nav class="flex items-center justify-between p-3 lg:px-8 my-2 mb-2" aria-label="Global">
       <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Clara Quintela</span>
-              <img class="h-48 w-auto" src="{{ Vite::asset('resources/img/logo_cq.png') }}" alt="logo">
+              <img class="h-64 w-auto" src="{{ Vite::asset('resources/img/logo_cq.png') }}" alt="logo">
           </a>
       </div>
       <div class="flex lg:hidden">
