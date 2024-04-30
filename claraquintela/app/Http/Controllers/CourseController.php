@@ -13,7 +13,8 @@ class CourseController extends Controller
      */
     public function index()
     {
-        //
+        $courses = Course::all();
+        return view('artist.classes', ["courses" => $courses, "title" => "Classes"]);
     }
 
     /**
@@ -37,7 +38,7 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        //
+        return view('artist.class', ["course" => $course]);
     }
 
     /**

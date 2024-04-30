@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use App\Http\Controllers\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,6 +36,11 @@ Route::get('/artist', function () {
 Route::get('/blog', function () {
     return view('blog/index');
 })->name("blog");
+
+
+
+Route::resource('/courses', CourseController::class);
+
 
 // Regroupe les routes qui commencent par le même nom 
 
