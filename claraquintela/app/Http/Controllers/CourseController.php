@@ -29,7 +29,7 @@ class CourseController extends Controller
 
         $courses = $coursesQuery->get();
 
-        return view('artist.classes', ["courses" => $courses, "title" => "Classes"]);
+        return view('artist.course.classes', ["courses" => $courses, "title" => "Classes"]);
     }
 
     /**
@@ -37,7 +37,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('artist.course.create');
     }
 
     /**
@@ -45,7 +45,11 @@ class CourseController extends Controller
      */
     public function store(StoreCourseRequest $request)
     {
-        //
+        $newCourse = new Course();
+        $newCourse->fill($request->all());
+        $newCourse->save();
+
+        return redirect()->route('courses.index');
     }
 
     /**
@@ -53,7 +57,7 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
-        return view('artist.class', ["course" => $course]);
+        return view('artist.course.class', ["course" => $course]);
     }
 
     /**

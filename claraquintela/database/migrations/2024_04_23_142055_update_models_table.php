@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table("courses", function (Blueprint $table) {
-            $table->text("category")->change(); // exemplo de criação de uma nova coluna. Usar "change" no lugar de default quando for só uma modificação
+            $table->text("category"); // exemplo de criação de uma nova coluna. Usar "change" no lugar de default quando for só uma modificação
         });
     }
 
@@ -23,7 +23,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table("courses", function (Blueprint $table) {
-            $table->dropColumn("nome_da_nova_coluna");
+            $table->dropColumn("category");
         });
     }
 };

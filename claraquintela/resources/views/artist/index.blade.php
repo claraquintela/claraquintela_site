@@ -78,13 +78,13 @@
                 </div>
 
                 <div class="items-center bg-[#ece2d7] rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
-                    <a href="#">
+                    <a href="{{ route('courses.index') }}">
                         <img class="w-[33rem]  rounded-lg sm:rounded-none sm:rounded-l-lg"
                             src="{{ Vite::asset('resources/img/class.jpg') }}" alt="Sashiko embroidery class">
                     </a>
                     <div class="p-5">
                         <h3 class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">Classes</a>
+                            <a href="{{ route('courses.index') }}">Classes</a>
                         </h3>
                         <p class="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">Are you planning to learn some
                             textile skills? I might have a class for you</p>
