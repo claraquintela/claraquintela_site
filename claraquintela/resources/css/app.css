@@ -5,3 +5,31 @@
 html{
     background-color: #f7f7f7;
 }
+
+body{
+    background-color: white;
+}
+
+@keyframes alert {
+    0% {
+        top: -200px;
+    }
+
+    30% {
+        top: 0;
+    }
+
+    70% {
+        top: 0;
+    }
+
+    100% {
+        top: -200px;
+    }
+}
+
+
+.alert {
+    top:-200px;
+    animation: alert 4000ms ease-in-out 100ms backwards;
+}

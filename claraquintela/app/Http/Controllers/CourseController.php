@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Course;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
 
@@ -11,9 +12,23 @@ class CourseController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $courses = Course::all();
+        //On récupère le queryString de la requête donc de l'url. Ex: www.patate.com?tri=xxx&direction=asc
+        $tri = $request->query("tri", 'nom');
+        $direction = $request->query('direction', 'asc');
+        $prixMax = $request->query("prix-max");
+
+        //Query démare une demande au modèle et doit finir avec get()
+        $coursesQuery = Course::query();
+        $coursesQuery->orderBy($tri, $direction);
+
+        if ($prixMax) {
+            $coursesQuery->where("price", "<", $prixMax);
+        }
+
+        $courses = $coursesQuery->get();
+
         return view('artist.classes', ["courses" => $courses, "title" => "Classes"]);
     }
 

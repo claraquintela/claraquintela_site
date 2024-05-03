@@ -18,5 +18,3 @@
     </section>
 
 @endsection
-
-@extends('partials.footer')

@@ -1,4 +1,4 @@
-<footer class="bg-gray-50 dark:bg-gray-800 antialiased">
+<footer class="bg-gray-50 antialiased">
     <div class="p-4 py-6 mx-auto max-w-screen-xl md:p-8 lg:p-10">
 
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
