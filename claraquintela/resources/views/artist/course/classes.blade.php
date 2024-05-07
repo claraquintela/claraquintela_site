@@ -4,6 +4,13 @@
 
 @section('content')
 
+
+    @if (session('success'))
+        <x-alert :type="'success'">
+            {{ session('success') }}
+        </x-alert>
+    @endif
+
     <div>
         <div class="m-16 ">
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'desc']) }}"

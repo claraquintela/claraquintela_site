@@ -6,6 +6,7 @@ use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
+use Illuminate\Auth\Events\Validated;
 
 class CourseController extends Controller
 {
@@ -43,13 +44,17 @@ class CourseController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreCourseRequest $request)
+    public function store(StoreCourseRequest $request) //se não precisar de um validador específico, basta o $request de base mesmo e pronto
     {
+        //limpa e valida os campos
+        $validate = $request->validated();
+        //cria uma nova instância do objeto
         $newCourse = new Course();
-        $newCourse->fill($request->all());
+        // preencge a insância de course com os dados do formulário devidade validados
+        $newCourse->fill($validate);
         $newCourse->save();
 
-        return redirect()->route('courses.index');
+        return redirect()->route('courses.index')->with("success", "The class was added to the list.");
     }
 
     /**
