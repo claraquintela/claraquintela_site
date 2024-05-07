@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
 use Illuminate\Auth\Events\Validated;
+use Illuminate\Support\Facades\Log;
 
 class CourseController extends Controller
 {
@@ -15,6 +16,10 @@ class CourseController extends Controller
      */
     public function index(Request $request)
     {
+        Log::info($request->url);
+        Log::warning("message");
+        Log::error("error");
+
         //On récupère le queryString de la requête donc de l'url. Ex: www.patate.com?tri=xxx&direction=asc
         $tri = $request->query("tri", 'nom');
         $direction = $request->query('direction', 'asc');

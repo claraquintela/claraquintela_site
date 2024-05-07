@@ -3,16 +3,14 @@
 @section('title', 'The Artist')
 
 @section('content')
+    <section class="bg-white p-20 ">
+        @if (session('success'))
+            <x-alert :type="'success'">
+                {{ session('success') }}
+            </x-alert>
+        @endif
 
-
-    @if (session('success'))
-        <x-alert :type="'success'">
-            {{ session('success') }}
-        </x-alert>
-    @endif
-
-    <div>
-        <div class="m-16 ">
+        <div>
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'desc']) }}"
                 class="m-2 border border-1 p-3">Trier par
                 prix</a>
@@ -24,9 +22,10 @@
                 fin
                 de semaine</a>
         </div>
-
+        <h1 class="text-black-700 font-bold mb-10 text-3xl m-20">Classes</h1>
         <div
             class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
+
 
             @foreach ($courses as $course)
                 <div class="w-72 bg-white shadow-md rounded-xl duration-500 hover:scale-105 hover:shadow-xl">
@@ -62,4 +61,5 @@
 
             </div>
         </div>
-    @endsection
+    </section>
+@endsection
