@@ -6,6 +6,7 @@ use App\Models\Course;
 use Illuminate\Http\Request;
 use App\Http\Requests\StoreCourseRequest;
 use App\Http\Requests\UpdateCourseRequest;
+use Exception;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Log;
 
@@ -16,10 +17,16 @@ class CourseController extends Controller
      */
     public function index(Request $request)
     {
-        Log::info($request->url);
-        Log::warning("message");
-        Log::error("error");
+        // Log::info($request->url);
+        // Log::warning("message");
+        // Log::error("error");
 
+        // try {
+        //     throw new Exception("");
+        // } catch (Exception $e) {
+
+        //     return back()->with("error", "Something went wrong);
+        // }
         //On récupère le queryString de la requête donc de l'url. Ex: www.patate.com?tri=xxx&direction=asc
         $tri = $request->query("tri", 'nom');
         $direction = $request->query('direction', 'asc');

@@ -3,12 +3,14 @@
 @section('title', 'The Artist')
 
 @section('content')
-    <section class="bg-white p-20 ">
+    <section class="bg-white px-20 flex flex-col justify-center items-center">
         @if (session('success'))
             <x-alert :type="'success'">
                 {{ session('success') }}
             </x-alert>
         @endif
+
+        <h1 class="text-black-700 font-bold mb-10 text-3xl m-20">Classes</h1>   
 
         <div>
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'desc']) }}"
@@ -22,7 +24,7 @@
                 fin
                 de semaine</a>
         </div>
-        <h1 class="text-black-700 font-bold mb-10 text-3xl m-20">Classes</h1>
+
         <div
             class="w-fit mx-auto grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 justify-items-center justify-center gap-y-20 gap-x-14 mt-10 mb-5">
 
