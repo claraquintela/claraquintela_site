@@ -10,4 +10,9 @@ class Course extends Model
     use HasFactory;
 
     protected $fillable = array("name", "description", "price", "category", "img");
+
+    public function imageFullPath()
+    {
+        return "/storage/$this->img";
+    }
 }

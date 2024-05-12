@@ -17,6 +17,9 @@ class CourseController extends Controller
      */
     public function index(Request $request)
     {
+
+        $newCourse = new Course();
+        session()->put("cart", ["course", $newCourse]);
         // Log::info($request->url);
         // Log::warning("message");
         // Log::error("error");
@@ -64,6 +67,9 @@ class CourseController extends Controller
         $newCourse = new Course();
         // preencge a insância de course com os dados do formulário devidade validados
         $newCourse->fill($validate);
+        //cria a pasta 
+        $path = $request->img->store("courses", "public");
+        $newCourse->img = $path;
         $newCourse->save();
 
         return redirect()->route('courses.index')->with("success", "The class was added to the list.");
@@ -74,6 +80,7 @@ class CourseController extends Controller
      */
     public function show(Course $course)
     {
+        $product = session()->get("cart");
         return view('artist.course.class', ["course" => $course]);
     }
 

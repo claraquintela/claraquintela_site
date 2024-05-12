@@ -25,7 +25,8 @@ class StoreCourseRequest extends FormRequest
             "name" => "required|min:3|max:100",
             "description" => "required|max:500",
             "price" => "required|numeric",
-            "category" => "required"
+            "category" => "required",
+            "img" => "image|max:2000"
         ];
     }
 }

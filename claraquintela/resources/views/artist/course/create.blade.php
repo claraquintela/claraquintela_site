@@ -64,12 +64,15 @@
             </div>
 
             <div class="mb-4">
-                <label class="block text-gray-700 font-bold mb-2" for="image">
+                <label class="block text-gray-700 font-bold mb-2" for="img">
                     Image
                 </label>
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="image" name="image" type="file" accept="image/*" required>
+                    id="img" name="img" type="file" accept="image/*" required>
+                    @error('img')
+                        <p class="text-red-900 text-lg">{{ $message }}</p>
+                    @enderror
             </div>
 
             <div class="flex items-center justify-center mb-4">

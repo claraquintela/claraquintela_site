@@ -10,11 +10,8 @@
                 <div class="flex flex-col md:flex-row -mx-4">
                     <div class="md:flex-1 px-4">
                         <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                            <img class="w-full h-full object-cover"
-                                src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg"
-                                alt="Product Image">
-
-
+                            <img class="w-full h-full object-cover" src="{{ $course->imageFullPath() }}"
+                                alt="{{ $course->name }}">
                         </div>
 
                     </div>
@@ -37,7 +34,8 @@
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                                 sed ante justo. Integer euismod libero id mauris malesuada tincidunt. Vivamus commodo nulla
                                 ut lorem rhoncus aliquet. Duis dapibus augue vel ipsum pretium, et venenatis sem blandit.
-                                Quisque ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum lacinia,
+                                Quisque ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum
+                                lacinia,
                                 non
                                 sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi
                                 consectetur.
