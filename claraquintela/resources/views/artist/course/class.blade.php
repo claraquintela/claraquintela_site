@@ -28,7 +28,7 @@
 
                         </div>
 
-                        <div>
+                        {{-- <div>
                             <span class="font-bold text-gray-700 dark:text-gray-300">Product Description:</span>
                             <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -40,12 +40,13 @@
                                 sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi
                                 consectetur.
                             </p>
-                        </div>
+                        </div> --}}
                         <div class="flex justify-center -mx-2 mb-4">
                             <div class="w-center px-2">
-                                <button
-                                    class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add
-                                    to Cart</button>
+                                <a
+                                    href="https://hotmart.com/pt-br/marketplace/produtos/visible-mending-para-mudar-o-planeta-a-partir-do-seu-guarda-roupa/W74181276I"><button
+                                        class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add
+                                        to Cart</button></a>
                             </div>
                         </div>
                     </div>

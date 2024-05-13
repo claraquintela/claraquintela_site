@@ -23,7 +23,7 @@ class StoreCourseRequest extends FormRequest
     {
         return [
             "name" => "required|min:3|max:100",
-            "description" => "required|max:500",
+            "description" => "required|max:2000",
             "price" => "required|numeric",
             "category" => "required",
             "img" => "image|max:2000"
