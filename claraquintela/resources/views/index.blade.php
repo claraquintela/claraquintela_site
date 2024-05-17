@@ -11,13 +11,12 @@
                 <div class="mr-auto place-self-center lg:col-span-7">
                     <div
                         class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20 w-64">
-                        Latest news in my blog <a href="#" class="font-semibold text-indigo-600"><span
-                                class="absolute inset-0" aria-hidden="true"></span>Read more <span
+                        Latest news in my blog <a href="#" class="font-semibold text-indigo-600">
+                        <span class="absolute inset-0" aria-hidden="true"></span>Read more<span
                                 aria-hidden="true">&rarr;</span></a>
                     </div>
                     <h1
-                        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white my-8">
-                        Stitches & Bits</h1>
+                        class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl dark:text-white my-8">Stitches Bits</h1>
                     <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">You
                         might be interested in knitting. Or perhaps you're looking for a skillful web developer. It doesn't
                         really matter. Anyway you find the right person: me!</p>
