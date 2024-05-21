@@ -26,7 +26,7 @@ class StoreCourseRequest extends FormRequest
             "description" => "required|max:2000",
             "price" => "required|numeric",
             "category" => "required",
-            "img" => "image|max:2000"
+            "img" => "image|max:2000|nullable"
         ];
     }
 }

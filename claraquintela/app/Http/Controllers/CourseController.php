@@ -89,7 +89,8 @@ class CourseController extends Controller
      */
     public function edit(Course $course)
     {
-        //
+        // dd($course);
+        return view('artist.course.edit', ["course" => $course]);
     }
 
     /**
@@ -97,7 +98,26 @@ class CourseController extends Controller
      */
     public function update(UpdateCourseRequest $request, Course $course)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'description' => 'required|string|max:2000',
+            'price' => 'required|string',
+            'category' => 'required|string',
+        ]);
+
+        $course->description = $validatedData['description'];
+        $course->price = $validatedData['price'];
+        $course->name = $validatedData['name'];
+        $course->category = $validatedData['category'];
+
+        if ($request->img) {
+            $path = $request->img->store("courses", "public");
+            $course->img = $path;
+        }
+
+        $course->update();
+
+        return redirect()->route('courses.index')->with('success', 'Course updated !');
     }
 
     /**
@@ -105,6 +125,8 @@ class CourseController extends Controller
      */
     public function destroy(Course $course)
     {
-        //
+        $course->delete(); //Pra tirar de vez da base de dados, usar forceDelete(). Para restaurar, restore().
+
+        return redirect()->route("courses.index")->with("success", "the class was deleted");
     }
 }

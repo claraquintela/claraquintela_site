@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\CourseController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,7 +41,7 @@ Route::get('/blog', function () {
 
 
 Route::resource('/courses', CourseController::class);
-
+Route::resource('/users', UserController::class);
 
 // Regroupe les routes qui commencent par le même nom 
 
