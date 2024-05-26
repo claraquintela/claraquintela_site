@@ -1,4 +1,4 @@
-  <nav class="flex items-center justify-between p-3 lg:px-8 my-2 mb-2" aria-label="Global">
+  <nav class="flex items-center justify-evenly p-3 lg:px-8 my-2 mb-2" aria-label="Global">
       <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
               <span class="sr-only">Clara Quintela</span>
@@ -15,15 +15,16 @@
               </svg>
           </button>
       </div>
-      <div class="hidden lg:flex lg:gap-x-12">
-          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">Home</a>
-          <a href="/developer" class="text-sm font-semibold leading-6 text-gray-900">Developer</a>
-          <a href="/artist" class="text-sm font-semibold leading-6 text-gray-900">Textile artist</a>
-          <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a>
-          <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">Contact</a>
+      <div class="hidden lg:flex lg:gap-x-20">
+          <a href="/" class="text-sm font-semibold leading-6 text-gray-900">{{ __('nav.home') }}</a>
+          <a href="/developer" class="text-sm font-semibold leading-6 text-gray-900">{{ __('nav.developer') }}</a>
+          <a href="/artist" class="text-sm font-semibold leading-6 text-gray-900">{{ __('nav.artist') }}</a>
+          {{-- <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a> --}}
+          <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">{{ __('nav.contact') }}</a>
       </div>
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Log in <span
-                  aria-hidden="true">&rarr;</span></a>
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
+              {{-- <span aria-hidden="true">&rarr;</span> --}}
+          </a>
       </div>
   </nav>

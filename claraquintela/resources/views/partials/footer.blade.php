@@ -9,12 +9,12 @@
 
             </a>
             <span class="block text-sm text-center text-gray-500 dark:text-gray-400">© 2024 <a href="/"
-                    class="hover:underline">Clara Quintela</a>. All Rights Reserved.
+                    class="hover:underline">Clara Quintela</a>. {{ __('footer.rights') }}
             </span>
             <ul class="flex justify-center mt-5 space-x-5">
 
                 <li>
-                    <a href="https://www.linkedin.com/in/claraquintela/"
+                    <a href="https://www.linkedin.com/in/claraquintela/" target="_blank"
                         class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
 
                         <svg width="20" height="20" fill="currentColor" aria-hidden="true"
@@ -25,7 +25,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/claraquintela"
+                    <a href="https://github.com/claraquintela" target="_blank"
                         class="text-gray-500 hover:text-gray-900 dark:hover:text-white dark:text-gray-400">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 20 20">

@@ -1,0 +1,42 @@
+{
+    "nav.home": "Home",
+    "nav.developer": "Developer",
+    "nav.artist": "Textile Artist",
+    "nav.contact": "Contact",
+
+    "index.main-text":"You might be interested in knitting. Or perhaps you're looking for a skillful web developer. It doesn't really matter. Anyway you found the right person: me!",
+    "index.main-thedeveloper": "The developer",
+    "index.main-theartist": "The artist",
+
+    "footer.rights": "All Rights Reserved.",
+
+    "artist.index.title": "The Artist",
+    "artist.index.hero-title": "Among needles and threads",
+    "artist.index.hero-paragraph1": "As a passionate textile artist, I weave creativity into every piece I make With a background in knitting, embroidery, weaving, and spinning, I tell stories through my art. ",
+    "artist.index.hero-paragraph2": "My journey includes earning a Fine Arts degree in Fibre and Material Practices from Concordia University in Montreal, Canada. As an experienced educator, with more than 10 years of experience in class, I share my love for these crafts, nurturing the next generation of textile enthusiasts.",
+    "artist.index.subtitle": "You might be interested in...",
+    "artist.index.subtitle-text": "Knitting, embroidering, spinning yarn, weaving... I tell stories with needles and thread",
+    "artist.index.highlight1-title": "Textile Art",
+    "artist.index.highlight1-text": "Embroidery is my media to express myself about subjects that matter to me",
+    "artist.index.highlight-span": "COMING SOON",
+    "artist.index.highlight2-title": "Embroidery Kits",
+    "artist.index.highlight2-text": "If you want start embroidering right now",
+    "artist.index.highlight3-title": "Knitting Patterns",
+    "artist.index.highlight3-text": "Check my knitting patterns published on Ravelry!",
+    "artist.index.highlight4-title": "Classes",
+    "artist.index.highlight4-text": "Are you planning to learn some textile skills? I might have a class for you",
+
+    "courses.classes.btn-price": "Price low to high",
+    "courses.classes.btn-name": "Name",
+    "courses.classes.btn-special": "Special Offer",
+
+    "developer.index.title": "The developer",
+    "developer.index.aboutme": "About me",
+    "developer.index.presentation-part1": "I am a tech enthusiast with a diverse background that spans from journalism to web development. My journey has led me to explore different domains and acquire valuable skills along the way.",
+    "developer.index.presentation-part2": "I’m excited to continue my journey as a developer, exploring new technologies and crafting innovative solutions. If you’re seeking someone passionate about code and with an analytical mindset, I’m ready to collaborate on challenging projects.",
+    "developer.index.education-title": "Education",
+    "developer.index.education-li1": "Diploma in Web Design and Development (AEC) from Maisonneuve College (2023-2024)",
+    "developer.index.education-li2": "Diploma in Full Stack Development from Concordia University (2019)",
+    "developer.index.education-li3": "Bachelor in Fine Arts - Textile Art from Concordia University (2014-2018)",
+    "developer.index.education-li4": "Bachelor in Social Communication - Journalism from Universidade Federal do Ceará - Brasil ( 1995-1999)"
+}

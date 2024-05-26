@@ -15,7 +15,7 @@
 
 @extends('partials.base')
 
-@section('title', 'Clara Quintela')
+@section('title', 'Developer')
 
 @section('content')
 
@@ -26,29 +26,22 @@
         <div
             class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div>
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About me</h2>
-                <p class="mt-4 text-gray-500">I am a tech enthusiast with a diverse background that spans from journalism to
-                    web development. My journey has led me to explore different domains and acquire valuable skills along
-                    the way.</p>
+                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ __('developer.index.aboutme') }}
+                </h2>
+                <p class="mt-4 text-gray-500">{{ __('developer.index.presentation-part1') }}</p>
 
-                <p class="mt-4 text-gray-500">I’m excited to continue my journey as a developer, exploring new technologies
-                    and crafting innovative solutions. If you’re seeking someone passionate about code and with an
-                    analytical mindset, I’m ready to collaborate on challenging projects.</p>
+                <p class="mt-4 text-gray-500">{{ __('developer.index.presentation-part2') }}</p>
 
                 <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
 
                     <div class="border-t border-gray-200 pt-4">
-                        <dt class="font-medium text-gray-900">Education</dt>
-                        <dd class="mt-2 text-sm text-gray-500">Diploma in Web Design and Development (AEC) from Maisonneuve
-                            College (2023-2024)</dd>
-                        <dd class="mt-2 text-sm text-gray-500">Diploma in Full Stack Development from Concordia University
-                            (2019)
+                        <dt class="font-medium text-gray-900">{{ __('developer.index.education-title') }}</dt>
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li1') }}</dd>
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li2') }}
                         </dd>
-                        <dd class="mt-2 text-sm text-gray-500">Bachelor in Fine Arts - Textile Art from Concordia University
-                            (2014-2018)
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li3') }}
                         </dd>
-                        <dd class="mt-2 text-sm text-gray-500">Bachelor in Social Communication - Journalism from
-                            Universidade Federal do Ceará - Brasil ( 1995-1999)
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li4') }}
                         </dd>
                     </div>
 

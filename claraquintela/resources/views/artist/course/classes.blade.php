@@ -13,13 +13,12 @@
         <h1 class="text-black-700 font-bold mb-10 text-3xl m-20">Classes</h1>
 
         <div>
-            <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'desc']) }}"
-                class="m-2 border border-1 p-3">Trier par
-                prix</a>
+            <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'asc']) }}"
+                class="m-2 border border-1 p-3">{{ __('courses.classes.btn-price') }}</a>
             <a href="{{ route('courses.index', ['tri' => 'name', 'direction' => 'asc']) }}"
-                class="m-2 border border-1 p-3">Trier par nom</a>
+                class="m-2 border border-1 p-3">{{__("courses.classes.btn-name")}}</a>
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'asc', 'prix-max' => 0.5]) }}"
-                class="m-2 border border-1 p-3">Spéciaux de la fin de semaine</a>
+                class="m-2 border border-1 p-3">{{__("courses.classes.btn-special")}}</a>
         </div>
 
         <div

@@ -34,7 +34,7 @@ class CourseController extends Controller
             $coursesQuery->where("price", "<", $prixMax);
         }
 
-        $courses = $coursesQuery->paginate(3);
+        $courses = $coursesQuery->paginate(3)->withQueryString();
 
         return view('artist.course.classes', ["courses" => $courses, "title" => "Classes"]);
     }

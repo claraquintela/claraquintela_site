@@ -1,0 +1,32 @@
+{
+    "nav.home": "Accueil",
+    "nav.developer": "Développeuse web",
+    "nav.artist": "Artiste Textile",
+    "nav.contact": "Contact",
+
+    "index.main-text":"Vous êtes peut-être intéressé par le tricot. Ou peut-être recherchez-vous une développeuse web compétente. Peu importe. Quoi qu'il en soit, vous avez trouvé la bonne personne : moi !",
+    "index.main-thedeveloper": "La développeuse",
+    "index.main-theartist": "L'artist",
+
+    "footer.rights": "Tous droits reservés.",
+
+    "artist.index.title": "L'artiste",
+    "artist.index.hero-title": "Entre aiguilles et fibres",
+    "artist.index.hero-paragraph1": "Artiste textile passionnée, je mets de la créativité dans chaque point. Expérimentée dans le tricot, la broderie, le tissage et le filage, je transforme les fibres en pièces textiles pleines d'histoires à raconter.",
+    "artist.index.hero-paragraph2": "Mon parcours comprend l'obtention d'un diplôme des beaux-arts en fibres et pratiques matérielles de l'Université Concordia à Montréal, au Canada. En tant qu'éducatrice chevronnée avec plus de 10 ans d'expérience en salle de classe, je partage mon amour de l'artisanat en encourageant la prochaine génération de passionnés du textile.",
+    "artist.index.subtitle": "Vous devez être intéressé(e) par...",
+    "artist.index.subtitle-text": "Tricot, broderie, filage, tissage... Je raconte des histoires avec des aiguilles et du fil",
+    "artist.index.highlight1-title": "Art textile",
+    "artist.index.highlight1-text": "Avec la broderie, j'exprime ce que l'écriture ne peut pas dire",
+    "artist.index.highlight-span": "BIENTÔT",
+    "artist.index.highlight2-title": "Kits de broderie",
+    "artist.index.highlight2-text": "Pour celles/ceux qui veulent commencer à broder",
+    "artist.index.highlight3-title": "Patrons de tricot",
+    "artist.index.highlight3-text": "Mes patron sont sur Ravelry!",
+    "artist.index.highlight4-title": "Cours en ligne",
+    "artist.index.highlight4-text": "Pour celles/ceux qui veulent apprendre une nouvelle technique textile",
+
+    "courses.classes.btn-price": "Prix ascendent",
+    "courses.classes.btn-name": "Nom",
+    "courses.classes.btn-special": "Offres spéciaux"
+}

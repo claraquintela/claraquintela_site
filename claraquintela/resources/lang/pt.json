@@ -1,0 +1,32 @@
+{ 
+    "nav.home": "Página Inicial",
+    "nav.developer": "Programadora Web",
+    "nav.artist": "Artista Têxtil",
+    "nav.contact": "Contato",
+
+    "index.main-text":"Talvez você esteja interessada(o) em tricô. Ou talvez esteja procurando uma desenvolvedora web habilidosa. Isso realmente não importa. De qualquer forma, você encontrou a pessoa certa: eu!",
+    "index.main-thedeveloper": "A programadora",
+    "index.main-theartist": "A artista",
+
+    "footer.rights": "Todos os direitos reservados.",
+
+    "artist.index.title": "A Artista",
+    "artist.index.hero-title": "Entre agulhas e fios",
+    "artist.index.hero-paragraph1": "Como uma artista apaixonada pelo que faço, eu coloco criatividade em cada ponto. Com experiência em tricô, bordado, tecelagem e fiação, transformo fibras em peças têxteis cheias de histórias para contar. ",
+    "artist.index.hero-paragraph2": "Minha jornada inclui a obtenção de um diploma de Belas Artes em Fibras e Práticas Materiais pela Concordia University em Montreal, Canadá. Como educadora experiente, com mais de 10 anos de experiência em sala de aula, compartilho meu amor por esses ofícios, estimulando a próxima geração de entusiastas têxteis.",
+    "artist.index.subtitle": "Você deve estar interessada(o) em...",
+    "artist.index.subtitle-text": "Tricô, bordado, fiação de fios, tecelagem... Conto histórias com agulhas e linhas",
+    "artist.index.highlight1-title": "Arte Têxtil",
+    "artist.index.highlight1-text": "No bordado, expresso o que a escrita não consegue dizer",
+    "artist.index.highlight-span": "EM BREVE",
+    "artist.index.highlight2-title": "Kits para bordar",
+    "artist.index.highlight2-text": "Para quem quer começar a bordar",
+    "artist.index.highlight3-title": "Receitas de tricô",
+    "artist.index.highlight3-text": "Minhas receitas publicadas no Ravelry!",
+    "artist.index.highlight4-title": "Cursos online",
+    "artist.index.highlight4-text": "Para quem está afim de aprender uma habilidade têxtil nova",
+
+    "courses.classes.btn-price": "Preço ascendente",
+    "courses.classes.btn-name": "Nome",
+    "courses.classes.btn-special": "Ofertas especiais"
+}
