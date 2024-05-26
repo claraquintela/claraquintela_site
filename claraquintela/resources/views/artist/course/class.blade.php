@@ -43,10 +43,9 @@
                         </div> --}}
                         <div class="flex justify-center -mx-2 mb-4">
                             <div class="w-center px-2">
-                                <a
-                                    href="https://hotmart.com/pt-br/marketplace/produtos/visible-mending-para-mudar-o-planeta-a-partir-do-seu-guarda-roupa/W74181276I"><button
-                                        class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Add
-                                        to Cart</button></a>
+                                <a href="{{ $course->link }}"><button
+                                        class="w-full bg-gray-900 dark:bg-gray-600 text-white py-2 px-4 rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-700">Eu
+                                        quero!</button></a>
                             </div>
                         </div>
                     </div>
