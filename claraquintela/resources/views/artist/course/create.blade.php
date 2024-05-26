@@ -57,6 +57,7 @@
                     <option value="">Choose a category</option>
                     <option value="Knitting">Knitting</option>
                     <option value="Embroidery">Embroidery</option>
+                    <option value="Business">Business</option>
                 </select>
                 @error('category')
                     <p class="text-red-900 text-lg">{{ $message }}</p>
@@ -70,9 +71,9 @@
                 <input
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                     id="img" name="img" type="file" accept="image/*" required>
-                    @error('img')
-                        <p class="text-red-900 text-lg">{{ $message }}</p>
-                    @enderror
+                @error('img')
+                    <p class="text-red-900 text-lg">{{ $message }}</p>
+                @enderror
             </div>
 
             <div class="flex items-center justify-center mb-4">

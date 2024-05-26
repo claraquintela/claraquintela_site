@@ -6,7 +6,7 @@
 
     <section class="mx-2 max-w-full flex flex-col justify-center px-64">
 
-        <h1 class="text-black-700 font-bold mb-10 text-3xl">Create a new class</h1>
+        <h1 class="text-black-700 font-bold mb-10 text-3xl">Edit class</h1>
         <form class="py-4 px-6" action="{{ route('courses.update', $course) }}" method="POST" enctype="multipart/form-data">
             @csrf
             @method('PUT')
@@ -28,8 +28,7 @@
                 </label>
                 <textarea
                     class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="description" name="description" rows="4" placeholder="Describe the class"
-                    value="{{ old('description', $course->description) }}"></textarea>
+                    id="description" name="description" rows="4" placeholder="Describe the class">{{ old('description', $course->description) }}</textarea>
                 @error('description')
                     <p class="text-red-900 text-lg">{{ $message }}</p>
                 @enderror

@@ -9,6 +9,7 @@ use App\Http\Requests\UpdateCourseRequest;
 use Exception;
 use Illuminate\Auth\Events\Validated;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
@@ -20,17 +21,7 @@ class CourseController extends Controller
 
         $newCourse = new Course();
         session()->put("cart", ["course", $newCourse]);
-        // Log::info($request->url);
-        // Log::warning("message");
-        // Log::error("error");
 
-        // try {
-        //     throw new Exception("");
-        // } catch (Exception $e) {
-
-        //     return back()->with("error", "Something went wrong);
-        // }
-        //On récupère le queryString de la requête donc de l'url. Ex: www.patate.com?tri=xxx&direction=asc
         $tri = $request->query("tri", 'nom');
         $direction = $request->query('direction', 'asc');
         $prixMax = $request->query("prix-max");
@@ -43,7 +34,7 @@ class CourseController extends Controller
             $coursesQuery->where("price", "<", $prixMax);
         }
 
-        $courses = $coursesQuery->get();
+        $courses = $coursesQuery->paginate(3);
 
         return view('artist.course.classes', ["courses" => $courses, "title" => "Classes"]);
     }
@@ -111,6 +102,11 @@ class CourseController extends Controller
         $course->category = $validatedData['category'];
 
         if ($request->img) {
+
+            if (Storage::disk("public")->exists($course->img)) {
+                Storage::disk("public")->delete($course->img);
+            }
+
             $path = $request->img->store("courses", "public");
             $course->img = $path;
         }
