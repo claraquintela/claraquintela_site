@@ -24,7 +24,7 @@
 
     <div class="bg-white flex">
         <div
-            class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+            class="mx-auto grid max-w-2xl grid-cols-1 items-start gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
             <div>
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ __('developer.index.aboutme') }}
                 </h2>
@@ -90,7 +90,7 @@
                 </dl>
             </div>
 
-            <div class="p-4 mx-10 my-[-100px]">
+            <div class="px-4 my-[-20px] mx-4">
                 <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl my-4">
                     {{ __('developer.index.projects-title') }}</h2>
                 <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
