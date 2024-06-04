@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Artisan;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,9 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function (Request $request) {
-    // dd($request->all());
+    // $utilisateur = User::first();
+    // auth()->login($utilisateur);
+    // dd(auth()->user());
     return view('index');
 })->name("index");
 
@@ -38,7 +43,26 @@ Route::get('/blog', function () {
     return view('blog/index');
 })->name("blog");
 
+Route::get('/linkstorage', function () {
+    Artisan::call('storage:link');
+});
 
+//To change the language
+Route::get('/locale', function (Request $request) {
+    $query = $request->query();
+    if (isset($query['lang'])) {
+        $lang = $query['lang'];
+    } else {
+        $lang =  "en";
+    }
+    session()->put('locale', $lang);
+    return back();
+})->name('locale');
+
+//AUTH routes
+Route::get('/login', [AuthController::class, "login"])->name("login");
+Route::post('/login', [AuthController::class, "authenticate"])->name("authenticate");
+Route::get('/logout', [AuthController::class, "logout"])->name("logout");
 
 Route::resource('/courses', CourseController::class);
 Route::resource('/users', UserController::class);

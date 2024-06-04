@@ -7,14 +7,26 @@ use Illuminate\Http\Request;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
 use App\Models\Privilege;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    /**
+    public function __construct()
+    {
+        //para usar em outro momento
+        $this->middleware("auth");
+        $this->authorizeResource(User::class, "user");
+    }
+
+    /** 
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
+        if (auth()->user() && auth()->user()->privilege_id != 1) {
+            return redirect()->route("index")->with("erreur", "You're not authorized to access this page");
+        }
+
         $tri = $request->query("tri", 'name');
         $direction = $request->query('direction', 'asc');
         $privilege = $request->query("privilege");
@@ -45,7 +57,7 @@ class UserController extends Controller
      */
     public function store(StoreUserRequest $request)
     {
-        //
+        //User::create(["name" => "$request.....", "email" => "claraquintela@gmail.com", "password" => Hash::make("12345"), "privilege"=>3]);
     }
 
     /**

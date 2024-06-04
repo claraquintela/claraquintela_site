@@ -9,6 +9,16 @@
 </head>
 
 <body class="bg-white">
+    @if (session('success'))
+        <x-alert :type="'success'">
+            {{ session('success') }}
+        </x-alert>
+    @endif
+    @if (session('erreur'))
+        <x-alert :type="'erreur'">
+            {{ session('erreur') }}
+        </x-alert>
+    @endif
 
     @include('partials.header')
 

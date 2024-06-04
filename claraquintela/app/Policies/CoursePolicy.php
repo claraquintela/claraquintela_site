@@ -11,17 +11,17 @@ class CoursePolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function viewAny(User $user): bool
+    public function viewAny(?User $user): bool
     {
-        //
+        return true;
     }
 
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Course $course): bool
+    public function view(?User $user, Course $course): bool
     {
-        //
+        return true;
     }
 
     /**
@@ -29,7 +29,7 @@ class CoursePolicy
      */
     public function create(User $user): bool
     {
-        //
+        return $user->privilege_id == 1;
     }
 
     /**
@@ -37,7 +37,7 @@ class CoursePolicy
      */
     public function update(User $user, Course $course): bool
     {
-        //
+        return $user->privilege_id == 1;
     }
 
     /**
@@ -45,7 +45,7 @@ class CoursePolicy
      */
     public function delete(User $user, Course $course): bool
     {
-        //
+        return $user->privilege_id == 1;
     }
 
     /**
@@ -53,7 +53,7 @@ class CoursePolicy
      */
     public function restore(User $user, Course $course): bool
     {
-        //
+        return $user->privilege_id == 1;
     }
 
     /**
@@ -61,6 +61,6 @@ class CoursePolicy
      */
     public function forceDelete(User $user, Course $course): bool
     {
-        //
+        return $user->privilege_id == 1;
     }
 }

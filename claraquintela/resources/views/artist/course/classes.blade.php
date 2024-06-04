@@ -16,9 +16,9 @@
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'asc']) }}"
                 class="m-2 border border-1 p-3">{{ __('courses.classes.btn-price') }}</a>
             <a href="{{ route('courses.index', ['tri' => 'name', 'direction' => 'asc']) }}"
-                class="m-2 border border-1 p-3">{{__("courses.classes.btn-name")}}</a>
+                class="m-2 border border-1 p-3">{{ __('courses.classes.btn-name') }}</a>
             <a href="{{ route('courses.index', ['tri' => 'price', 'direction' => 'asc', 'prix-max' => 0.5]) }}"
-                class="m-2 border border-1 p-3">{{__("courses.classes.btn-special")}}</a>
+                class="m-2 border border-1 p-3">{{ __('courses.classes.btn-special') }}</a>
         </div>
 
         <div
@@ -54,14 +54,20 @@
                         </div>
                     </a>
 
-                    <form action="{{ route('courses.destroy', $course) }}" method="POST">
-                        @csrf
-                        @method('DELETE ')
-                        <button class="rounded-sm cursor-pointer p-3">Delete</button>
-                    </form>
-                    <a href="{{ route('courses.edit', $course) }}" class="rounded-sm cursor-pointer p-3">
-                        Update
-                    </a>
+                    @if (auth()->user() && auth()->user()->privilege_id == 1)
+                        {
+                        <form action="{{ route('courses.destroy', $course) }}" method="POST">
+                            @csrf
+                            @method('DELETE ')
+                            <button class="rounded-sm cursor-pointer p-3">Delete</button>
+                        </form>
+                        <a href="{{ route('courses.edit', $course) }}" class="rounded-sm cursor-pointer p-3">
+                            Update
+                        </a>
+                        }
+                    @endif
+
+
                 </div>
             @endforeach
 

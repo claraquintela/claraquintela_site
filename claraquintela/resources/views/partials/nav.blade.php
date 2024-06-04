@@ -13,9 +13,20 @@
           {{-- <a href="/blog" class="text-sm font-semibold leading-6 text-gray-900">Blog</a> --}}
           <a href="/contact" class="text-sm font-semibold leading-6 text-gray-900">{{ __('nav.contact') }}</a>
       </div>
-      <div class="lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">
-              {{-- <span aria-hidden="true">&rarr;</span> --}}
-          </a>
-      </div>
+      @auth
+          <div class="lg:flex lg:flex-1 lg:justify-end">
+              <a href="{{ route('logout') }}" class="text-sm font-semibold leading-6 text-gray-900">Logout
+                  <span aria-hidden="true">&rarr;</span>
+              </a>
+          </div>
+      @endauth
+
+      @guest
+          <div class="lg:flex lg:flex-1 lg:justify-end">
+              <a href="{{ route('login') }}" class="text-sm font-semibold leading-6 text-gray-900">Login
+                  <span aria-hidden="true">&rarr;</span>
+              </a>
+          </div>
+      @endguest
+
   </nav>

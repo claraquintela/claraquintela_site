@@ -13,12 +13,18 @@ use Illuminate\Support\Facades\Storage;
 
 class CourseController extends Controller
 {
+    public function __construct()
+    {
+        //para usar em outro momento
+        $this->middleware("auth")->except("index", "show");
+        // $this->authorizeResource(Course::class, "course");
+    }
+
     /**
      * Display a listing of the resource.
      */
     public function index(Request $request)
     {
-
         $newCourse = new Course();
         session()->put("cart", ["course", $newCourse]);
 
