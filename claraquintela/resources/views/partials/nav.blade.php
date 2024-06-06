@@ -1,3 +1,33 @@
+  <div class="flex flex-row justify-end select-none">
+      <div class="flex flex-row items-center right-1 ">
+          <a href="{{ route('locale', ['lang' => 'en']) }}">
+              <button
+                  class="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none">
+                  <span class="text-md">En</span>
+                  <span class="ml-1"> <img src="{{ Vite::asset('resources/img/icons8-united-kingdom-48.png') }}"
+                          class="w-5 h-5" /></span>
+              </button>
+          </a>
+          <a href="{{ route('locale', ['lang' => 'fr']) }}">
+              <button
+                  class="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none ">
+                  <span class="text-md">Fr</span>
+                  <span class="ml-1"> <img src="{{ Vite::asset('resources/img/icons8-france-48.png') }}"
+                          class="w-5 h-5" /></span>
+              </button>
+          </a>
+          <a href="{{ route('locale', ['lang' => 'pt']) }}">
+              <button
+                  class="p-2 flex flex-row items-center border border-gray-300 text-sm font-medium text-gray-700 hover:bg-gray-100 focus:bg-gray-200 focus:outline-none ">
+                  <span class="text-md">Br</span>
+                  <span class="ml-1"> <img src="{{ Vite::asset('resources/img/icons8-brazil-48.png') }}"
+                          class="w-5 h-5" /></span>
+              </button>
+          </a>
+      </div>
+
+  </div>
+
   <nav class="flex items-center justify-evenly p-3 lg:px-8 my-2 mb-2" aria-label="Global">
       <div class="flex lg:flex-1">
           <a href="/" class="-m-1.5 p-1.5">
