@@ -55,7 +55,6 @@
                     </a>
 
                     @if (auth()->user() && auth()->user()->privilege_id == 1)
-                        {
                         <form action="{{ route('courses.destroy', $course) }}" method="POST">
                             @csrf
                             @method('DELETE ')
@@ -64,7 +63,6 @@
                         <a href="{{ route('courses.edit', $course) }}" class="rounded-sm cursor-pointer p-3">
                             Update
                         </a>
-                        }
                     @endif
 
 

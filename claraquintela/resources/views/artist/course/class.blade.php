@@ -18,7 +18,7 @@
                     <div class="md:flex-1 px-4">
                         <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">{{ $course->name }}</h2>
                         <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
-                            {{ $course->description }}
+                            {!! $course->description !!}
                         </p>
                         <div class="flex mb-4">
                             <div class="mr-4">
@@ -28,19 +28,6 @@
 
                         </div>
 
-                        {{-- <div>
-                            <span class="font-bold text-gray-700 dark:text-gray-300">Product Description:</span>
-                            <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                                sed ante justo. Integer euismod libero id mauris malesuada tincidunt. Vivamus commodo nulla
-                                ut lorem rhoncus aliquet. Duis dapibus augue vel ipsum pretium, et venenatis sem blandit.
-                                Quisque ut erat vitae nisi ultrices placerat non eget velit. Integer ornare mi sed ipsum
-                                lacinia,
-                                non
-                                sagittis mauris blandit. Morbi fermentum libero vel nisl suscipit, nec tincidunt mi
-                                consectetur.
-                            </p>
-                        </div> --}}
                         <div class="flex justify-center -mx-2 mb-4">
                             <div class="w-center px-2">
                                 <a href="{{ $course->link }}"><button

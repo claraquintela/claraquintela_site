@@ -2,6 +2,10 @@
 
 @section('title', 'Add class')
 
+@section("js-file'")
+    <script type='module' src="{{ Vite::asset('resources/js/quill.js') }}"></script>
+@endsection
+
 @section('content')
 
     <section class="mx-2 max-w-full flex flex-col justify-center px-64">
@@ -25,13 +29,15 @@
                 <label class="block text-gray-700 font-bold mb-2" for="description">
                     Description
                 </label>
-                <textarea
-                    class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                    id="description" name="description" rows="4" placeholder="Describe the class" required
-                    value="{{ old('description') }}"></textarea>
+
+                <div id="quill-editor" class="mb-3" style="height: 300px;"></div>
+                <textarea rows="3" class="mb-3 d-none" hidden name="description" id="quill-editor-area"
+                    placeholder="Describe the class"></textarea>
+
                 @error('description')
                     <p class="text-red-900 text-lg">{{ $message }}</p>
                 @enderror
+                
             </div>
             <div class="mb-4">
                 <label class="block text-gray-700 font-bold mb-2" for="price">

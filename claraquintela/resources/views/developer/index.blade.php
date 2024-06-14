@@ -34,7 +34,7 @@
 
                 <dl class="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4 bg-[#ece2d7] p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.education-title') }}</dt>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.education-li2') }}
@@ -45,7 +45,7 @@
                         </dd>
                     </div>
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4 p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.technicalskills-title') }}</dt>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.technicalskills-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.technicalskills-li2') }}</dd>
@@ -56,22 +56,22 @@
                     </div>
 
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4 p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.journalism-title') }}</dt>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.journalism-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.journalism-li2') }}</dd>
 
                     </div>
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4 bg-[#ece2d7] p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.fullstack-title') }}</dt>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li2') }}</dd>
                     </div>
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4 bg-[#ece2d7] p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.competencies-title') }}</dt>
-                        <p>{{ __('developer.index.competencies-li1') }}</p>
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li2') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li3') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li4') }}</dd>
@@ -79,9 +79,9 @@
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.competencies-li6') }}</dd>
                     </div>
 
-                    <div class="border-t border-gray-200 pt-4">
+                    <div class="border-t border-gray-200 pt-4  p-3">
                         <dt class="font-medium text-gray-900">{{ __('developer.index.learning-title') }}</dt>
-                        <p>{{ __('developer.index.learning-li1') }}</p>
+                        <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.learning-li1') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.learning-li2') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.learning-li3') }}</dd>
                         <dd class="mt-2 text-sm text-gray-500">{{ __('developer.index.learning-li4') }}</dd>
@@ -91,7 +91,7 @@
             </div>
 
             <div class="px-4 my-[-20px] mx-4">
-                <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl my-4">
+                <h2 class="text-3xl font-bold tracking-tight text-black sm:text-4xl my-4">
                     {{ __('developer.index.projects-title') }}</h2>
                 <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
 
